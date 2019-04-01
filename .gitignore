@@ -2,3 +2,4 @@
 /JenkinsMaster/.vagrant
 /k8sCluster/.vagrant
 JenkinsMaster/ubuntu-xenial-16.04-cloudimg-console.log
+k8sCluster/ubuntu-xenial-16.04-cloudimg-console.log
