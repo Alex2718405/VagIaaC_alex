@@ -640,88 +640,226 @@ cloud-init[961]: The key's randomart image is:
 [[0;32m  OK  [0m] Reached target Sockets.
 [[0;32m  OK  [0m] Reached target Basic System.
 [[0;32m  OK  [0m] Started Deferred execution scheduler.
-[[0;32m  OK  [0m] Started D-Bus System Message Bus.
-         Starting Accounts Service...
-         Starting LXD - container startup/shutdown...
-[[0;32m  OK  [0m] Started Unattended Upgrades Shutdown.
-[[0;32m  OK  [0m] Started FUSE filesystem for LXC.
-         Starting LSB: MD monitoring daemon...
-         Starting Pollinate to seed the pseudo random number generator...
-[[0;32m  OK  [0m] Started Regular background program processing daemon.
-         Starting LSB: Record successful boot for GRUB...
-         Starting Virtualbox guest utils...
-         Starting /etc/rc.local Compatibility...
-[[0;32m  OK  [0m] Started ACPI event daemon.
-         Starting Snappy daemon...
-         Starting Login Service...
-         Starting System Logging Service...
-[[0;32m  OK  [0m] Started /etc/rc.local Compatibility.
-[[0;32m  OK  [0m] Started Login Service.
-[[0;32m  OK  [0m] Started System Logging Service.
-[[0;32m  OK  [0m] Started Login to default iSCSI targets.
-[[0;32m  OK  [0m] Reached target Remote File Systems (Pre).
-[[0;32m  OK  [0m] Reached target Remote File Systems.
-         Starting Permit User Sessions...
-         Starting LSB: Set the CPU Frequency Scaling governor to "ondemand"...
-         Starting LSB: daemon to balance interrupts for SMP systems...
-         Starting LSB: automatic crash report generation...
-[[0;32m  OK  [0m] Started LSB: MD monitoring daemon.
-[[0;32m  OK  [0m] Started LSB: Set the CPU Frequency Scaling governor to "ondemand".
-[[0;32m  OK  [0m] Started Permit User Sessions.
-         Starting Terminate Plymouth Boot Screen...
-         Starting Hold until boot process finishes up...
-[[0;32m  OK  [0m] Started Hold until boot process finishes up.
-[[0;32m  OK  [0m] Started Terminate Plymouth Boot Screen.
-         Starting Set console scheme...
-[[0;32m  OK  [0m] Started Getty on tty1.
-[[0;32m  OK  [0m] Started Serial Getty on ttyS0.
-[[0;32m  OK  [0m] Reached target Login Prompts.
-[[0;32m  OK  [0m] Started LSB: Record successful boot for GRUB.
-[[0;32m  OK  [0m] Started Set console scheme.
-         Starting Authenticate and Authorize Users to Run Privileged Tasks...
-[[0;32m  OK  [0m] Started LSB: daemon to balance interrupts for SMP systems.
-[[0;32m  OK  [0m] Started LSB: automatic crash report generation.
-[[0;32m  OK  [0m] Started Authenticate and Authorize Users to Run Privileged Tasks.
-[[0;32m  OK  [0m] Started Accounts Service.
-[[0;32m  OK  [0m] Started Virtualbox guest utils.
-[[0;32m  OK  [0m] Started LXD - container startup/shutdown.
-[[0;32m  OK  [0m] Started Snappy daemon.
-         Starting Wait until snapd is fully seeded...
-[[0;32m  OK  [0m] Started Pollinate to seed the pseudo random number generator.
-         Starting OpenBSD Secure Shell server...
-[[0;32m  OK  [0m] Started OpenBSD Secure Shell server.
-[[0;32m  OK  [0m] Created slice User Slice of vagrant.
-         Starting User Manager for UID 1000...
-[[0;32m  OK  [0m] Started Session 1 of user vagrant.
-[[0;32m  OK  [0m] Started User Manager for UID 1000.
-[[0;32m  OK  [0m] Started Wait until snapd is fully seeded.
-[[0;32m  OK  [0m] Reached target Multi-User System.
-[[0;32m  OK  [0m] Reached target Graphical Interface.
-         Starting Update UTMP about System Runlevel Changes...
-         Starting Apply the settings specified in cloud-config...
-[[0;32m  OK  [0m] Started Update UTMP about System Runlevel Changes.
-[   20.194444] cloud-init[1384]: Generating locales (this might take a while)...
-
-Ubuntu 16.04.6 LTS ubuntu-xenial ttyS0
-
-ubuntu-xenial login: [   21.747837] cloud-init[1384]:   en_US.UTF-8... done
-[   21.750595] cloud-init[1384]: Generation complete.
-[   22.569994] cloud-init[1384]: Cloud-init v. 18.5-45-g3554ffe8-0ubuntu1~16.04.1 running 'modules:config' at Fri, 29 Mar 2019 08:49:58 +0000. Up 19.93 seconds.
-ci-info: no authorized ssh keys fingerprints found for user ubuntu.
-<14>Mar 29 08:50:01 ec2: 
-<14>Mar 29 08:50:01 ec2: #############################################################
-<14>Mar 29 08:50:01 ec2: -----BEGIN SSH HOST KEY FINGERPRINTS-----
-<14>Mar 29 08:50:01 ec2: 1024 SHA256:5+kQ7bnNdf5i6Vm5s95fAyldZSDuNeJUvIUgdNbmvOc root@ubuntu-xenial (DSA)
-<14>Mar 29 08:50:01 ec2: 256 SHA256:aSalifru1u+iyVu8MDVy4ZDF+PHob50tYe1lvgoj7B8 root@ubuntu-xenial (ECDSA)
-<14>Mar 29 08:50:01 ec2: 256 SHA256:yziIjr5hsgxgV50nUL1OvXFVBaqmEU23ny3R91DnlmM root@ubuntu-xenial (ED25519)
-<14>Mar 29 08:50:01 ec2: 2048 SHA256:bRcDORUD18yw8mWR17e4+oLgceSPJ0ul90Yw/Vh7L1s root@ubuntu-xenial (RSA)
-<14>Mar 29 08:50:01 ec2: -----END SSH HOST KEY FINGERPRINTS-----
-<14>Mar 29 08:50:01 ec2: #############################################################
------BEGIN SSH HOST KEY KEYS-----
-ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBPvpYB/GZP7chbnc3LDbHF/BhCTLqX7yh7b2xv+HxmtmFUs3i0sPBe6La6e9TSvnXtDs72brdi17HK70lx07+Rc= root@ubuntu-xenial
-ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFMPu4lkVgNz59Ps0p0ig2It9qaIXxabGxOkFbYWqhb1 root@ubuntu-xenial
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDDYoN6kfBvNVVv6BecVEZOhNpk95ezpiPlmW8it0EHMBauRuPL4nSzt2Fgn77pAy8SWm9tr+Yqp+NNMIF2jF5Gn6grpvmeL3T9bZP2QuoaKrps65tR6lODO+REORMx+D+H5Qhrdq9YJWgPOS3n937slLgyEemJTbP2JZcEyZviv7g4SZFmJci54szfNlAg92HMP/4GBHkM7NdQMlyAX+cdqJUyamrJhOIt7SVuWOo8vkDrDzi/zsLt3esk1kifuIy+ccFCl9NSfsacfcS1922fxCsbUCsfqLHHJKea9gRKauXJX/lpLb2kKZxHN3WqebFe2bZpXz+uBizJUlIBtY+D root@ubuntu-xenial
------END SSH HOST KEY KEYS-----
-[   23.250275] cloud-init[1574]: Cloud-init v. 18.5-45-g3554ffe8-0ubuntu1~16.04.1 running 'modules:final' at Fri, 29 Mar 2019 08:50:01 +0000. Up 23.02 seconds.
-[   23.252268] cloud-init[1574]: ci-info: no authorized ssh keys fingerprints found for user ubuntu.
-[   23.253852] cloud-init[1574]: Cloud-init v. 18.5-45-g3554ffe8-0ubuntu1~16.04.1 finished at Fri, 29 Mar 2019 08:50:02 +0000. Datasource DataSourceNoCloud [seed=/dev/sdb][dsmode=net].  Up 23.23 seconds
+[[0;32m  OK  [0m] Started D-Bus System Message Bus.         Stopping Authenticate and Authorize Users to Run Privileged Tasks...
+[[0;32m  OK  [0m] Stopped Kubernetes transient mount ...o~secret/kube-proxy-token-45vtw.
+         Stopping ACPI event daemon...
+[[0;32m  OK  [0m] Stopped target Graphical Interface.
+[[0;32m  OK  [0m] Stopped target Timers.
+[[0;32m  OK  [0m] Stopped Daily apt upgrade and clean activities.
+[[0;32m  OK  [0m] Stopped Daily Cleanup of Temporary Directories.
+[[0;32m  OK  [0m] Stopped Daily apt download activities.
+[[0;32m  OK  [0m] Stopped target Cloud-init target.
+[[0;32m  OK  [0m] Stopped Execute cloud user/final scripts.
+[[0;32m  OK  [0m] Stopped Apply the settings specified in cloud-config.
+[[0;32m  OK  [0m] Stopped target Cloud-config availability.
+[[0;32m  OK  [0m] Stopped target Multi-User System.
+         Stopping Virtualbox guest utils...
+[[0;32m  OK  [0m] Stopped target Login Prompts.
+         Stopping kubelet: The Kubernetes Node Agent...
+         Stopping LXD - container startup/shutdown...
+         Stopping FUSE filesystem for LXC...
+         Stopping Deferred execution scheduler...
+[[0;32m  OK  [0m] Stopped Wait until snapd is fully seeded.
+         Stopping Login Service...
+         Stopping LSB: Set up cgroupfs mounts....
+         Stopping Unattended Upgrades Shutdown...
+         Stopping LSB: Record successful boot for GRUB...
+         Stopping D-Bus System Message Bus...
+         Stopping Docker Application Container Engine...
+         Stopping LSB: MD monitoring daemon...
+         Stopping LSB: daemon to balance interrupts for SMP systems...
+         Stopping Serial Getty on ttyS0...
+[[0;32m  OK  [0m] Closed Load/Save RF Kill Switch Status /dev/rfkill Watch.
+         Stopping Regular background program processing daemon...
+[[0;32m  OK  [0m] Stopped target System Time Synchronized.
+         Stopping System Logging Service...
+         Stopping Getty on tty1...
+         Stopping LSB: automatic crash report generation...
+         Stopping LSB: Set the CPU Frequency Scaling governor to "ondemand"...
+         Stopping OpenBSD Secure Shell server...
+         Stopping Accounts Service...
+[[0;32m  OK  [0m] Unmounted /var/lib/lxcfs.
+[[0;32m  OK  [0m] Stopped Login Service.
+[[0;32m  OK  [0m] Stopped kubelet: The Kubernetes Node Agent.
+[[0;32m  OK  [0m] Stopped Deferred execution scheduler.
+[[0;32m  OK  [0m] Stopped System Logging Service.
+[[0;32m  OK  [0m] Stopped Accounts Service.
+[[0;32m  OK  [0m] Stopped Regular background program processing daemon.
+[[0;32m  OK  [0m] Stopped Getty on tty1.
+[[0;32m  OK  [0m] Stopped ACPI event daemon.
+[[0;32m  OK  [0m] Stopped Serial Getty on ttyS0.
+[[0;32m  OK  [0m] Stopped Authenticate and Authorize Users to Run Privileged Tasks.
+[[0;32m  OK  [0m] Stopped OpenBSD Secure Shell server.
+[[0;32m  OK  [0m] Stopped LSB: Set up cgroupfs mounts..
+[[0;32m  OK  [0m] Stopped D-Bus System Message Bus.
+[[0;32m  OK  [0m] Stopped FUSE filesystem for LXC.
+[[0;32m  OK  [0m] Stopped LXD - container startup/shutdown.
+[[0;32m  OK  [0m] Stopped LSB: MD monitoring daemon.
+[[0;32m  OK  [0m] Stopped Virtualbox guest utils.
+[[0;32m  OK  [0m] Stopped LSB: Record successful boot for GRUB.
+[[0;32m  OK  [0m] Stopped LSB: daemon to balance interrupts for SMP systems.
+[[0;32m  OK  [0m] Stopped LSB: Set the CPU Frequency Scaling governor to "ondemand".
+[[0;32m  OK  [0m] Stopped LSB: automatic crash report generation.
+[[0;32m  OK  [0m] Removed slice system-serial\x2dgetty.slice.
+[[0;32m  OK  [0m] Removed slice system-getty.slice.
+         Stopping Permit User Sessions...
+[[0;32m  OK  [0m] Stopped /etc/rc.local Compatibility.
+[[0;32m  OK  [0m] Stopped Permit User Sessions.
+[[0;32m  OK  [0m] Unmounted /run/docker/netns/be3c5a9f090c.
+[[0;32m  OK  [0m] Unmounted /var/lib/docker/container...6be32ee0455b3b0430a7cec7a13/shm.
+[[0;32m  OK  [0m] Stopped target Remote File Systems.
+[[0;32m  OK  [0m] Stopped target Remote File Systems (Pre).
+         Stopping Login to default iSCSI targets...
+[[0;32m  OK  [0m] Stopped target User and Group Name Lookups.
+[[0;32m  OK  [0m] Unmounted /var/lib/docker/aufs/mnt/...3791d745aa93d2836022969ce1636be.
+[[0;32m  OK  [0m] Stopped Unattended Upgrades Shutdown.
+[[0;32m  OK  [0m] Unmounted /var/lib/docker/aufs/mnt/...138a989925e6b419dd269a74165f471.
+[[0;32m  OK  [0m] Unmounted /var/lib/docker/aufs/mnt/...41e1ffd2248bf353b6fb9e4c68c67fd.
+[[0;32m  OK  [0m] Unmounted /run/docker/netns/f62843ba4ee2.
+[[0;32m  OK  [0m] Unmounted /var/lib/docker/container...b8a94edc1548e4673003aae9348/shm.
+[[0;32m  OK  [0m] Unmounted /var/lib/docker/container...874fc269112603166633c24106b/shm.
+[[0;32m  OK  [0m] Unmounted /var/lib/docker/container...17f60144b25586f2354cf9e0f52/shm.
+[[0;32m  OK  [0m] Unmounted /var/lib/docker/aufs/mnt/...7a52deffd6a6ad18ee509da9db22c11.
+[[0;32m  OK  [0m] Unmounted /var/lib/docker/container...943943fdc395b3b4da62b2f966f/shm.
+[[0;32m  OK  [0m] Unmounted /var/lib/docker/container...50201734e451e7b0769ebd60075/shm.
+[[0;32m  OK  [0m] Unmounted /var/lib/docker/aufs/mnt/...a6ca7aba6cf1af7e719c33d3a0ab585.
+[[0;32m  OK  [0m] Stopped Login to default iSCSI targets.
+         Stopping iSCSI initiator daemon (iscsid)...
+[[0;32m  OK  [0m] Unmounted /var/lib/dock[[0;32m  OK  [0m] Stopped Docker Application Container Engine.
+[[0;32m  OK  [0m] Stopped target Basic System.
+[[0;32m  OK  [0m] Stopped target Sockets.
+[[0;32m  OK  [0m] Closed Socket activation for snappy daemon.
+[[0;32m  OK  [0m] Closed D-Bus System Message Bus Socket.
+[[0;32m  OK  [0m] Closed UUID daemon activation socket.
+[[0;32m  OK  [0m] Closed ACPID Listen Socket.
+[[0;32m  OK  [0m] Closed LXD - unix socket.
+[[0;32m  OK  [0m] Closed Syslog Socket.
+[[0;32m  OK  [0m] Stopped target Paths.
+[[0;32m  OK  [0m] Stopped Dispatch Password Requests to Console Directory Watch.
+[[0;32m  OK  [0m] Stopped ACPI Events Check.
+[[0;32m  OK  [0m] Stopped Forward Password Requests to Wall Directory Watch.
+[[0;32m  OK  [0m] Stopped target Slices.
+[[0;32m  OK  [0m] Removed slice User and Session Slice.
+[[0;32m  OK  [0m] Stopped target Network.
+[[0;32m  OK  [0m] Closed Docker Socket for the API.
+[[0;32m  OK  [0m] Stopped target System Initialization.
+[[0;32m  OK  [0m] Stopped target Encrypted Volumes.
+[[0;32m  OK  [0m] Stopped Initial cloud-init job (metadata service crawler).
+         Stopping Raise network interface[[0;32m  OK  [0m] Unmounted /var/lib/docker/aufs/mnt/...6f21cbabe714f2d52c8dc73adf6849b.
+[[0;32m  OK  [0m] Unmounted /var/lib/docker/aufs/mnt/...914f63edd549925eaa18aa5721a2b53.
+[[0;32m  OK  [0m] Unmounted /var/lib/docker/aufs.
+[[0;32m  OK  [0m] Stopped Docker Application Container Engine.
+[[0;32m  OK  [0m] Stopped target Network.
+[[0;32m  OK  [0m] Stopped target Basic System.
+[[0;32m  OK  [0m] Stopped target Slices.
+[[0;32m  OK  [0m] Removed slice User and Session Slice.
+[[0;32m  OK  [0m] Stopped target Paths.
+[[0;32m  OK  [0m] Stopped Dispatch Password Requests to Console Directory Watch.
+[[0;32m  OK  [0m] Stopped ACPI Events Check.
+[[0;32m  OK  [0m] Stopped Forward Password Requests to Wall Directory Watch.
+[[0;32m  OK  [0m] Stopped target Sockets.
+[[0;32m  OK  [0m] Closed UUID daemon activation socket.
+[[0;32m  OK  [0m] Closed Socket activation for snappy daemon.
+[[0;32m  OK  [0m] Closed ACPID Listen Socket.
+[[0;32m  OK  [0m] Closed Syslog Socket.
+[[0;32m  OK  [0m] Closed D-Bus System Message Bus Socket.
+[[0;32m  OK  [0m] Closed LXD - unix socket.
+[[0;32m  OK  [0m] Closed Docker Socket for the API.
+[[0;32m  OK  [0m] Stopped target System Initialization.
+[[0;32m  OK  [0m] Stopped Initial cloud-init job (metadata service crawler).
+         Stopping Raise network interfaces...
+[[0;32m  OK  [0m] Stopped Create Volatile Files and Directories.
+[[0;32m  OK  [0m] Stopped target Swap.
+         Stopping Load/Save Random Seed...
+         Stopping LSB: ebtables ruleset management...
+[[0;32m  OK  [0m] Stopped target Encrypted Volumes.
+[[0;32m  OK  [0m] Stopped Load/Save Random Seed.
+[[0;32m  OK  [0m] Stopped LSB: ebtables ruleset management.
+[[0;32m  OK  [0m] Stopped Raise network interfaces.
+[[0;32m  OK  [0m] Stopped Apply Kernel Variables.
+[[0;32m  OK  [0m] Stopped target Network (Pre).
+[[0;32m  OK  [0m] Stopped Initial cloud-init job (pre-networking).
+[[0;32m  OK  [0m] Stopped target Local File Systems.
+         Unmounting /var/lib/kubelet/pods/c0...io~secret/coredns-token-6w9p6...
+         Unmounting /vagrant...
+         Unmounting /var/lib/kubelet/pods/c0...secret/kube-proxy-token-45vtw...
+         Unmounting /var/lib/kubelet/pods/c0...io~secret/coredns-token-6w9p6...
+         Unmounting /var/lib/kubelet/pods/c0...ecret/calico-node-token-ljkph...
+         Unmounting /run/docker/netns/default...
+[[0;32m  OK  [0m] Stopped Load Kernel Modules.
+[[0;32m  OK  [0m] Unmounted /var/lib/kubelet/pods/c08...s.io~secret/coredns-token-6w9p6.
+[[0;32m  OK  [0m] Unmounted /var/lib/kubelet/pods/c08...o~secret/kube-proxy-token-45vtw.
+[[0;32m  OK  [0m] Unmounted /vagrant.
+[[0;32m  OK  [0m] Unmounted /var/lib/kubelet/pods/c09...s.io~secret/coredns-token-6w9p6.
+[[0;32m  OK  [0m] Unmounted /var/lib/kubelet/pods/c08...~secret/calico-node-token-ljkph.
+[[0;32m  OK  [0m] Unmounted /run/docker/netns/default.
+[[0;32m  OK  [0m] Reached target Unmount All Filesystems.
+[[0;32m  OK  [0m] Stopped target Local File Systems (Pre).
+[[0;32m  OK  [0m] Stopped Create Static Device Nodes in /dev.
+[[0;32m  OK  [0m] Stopped Remount Root and Kernel File Systems.
+[[0;32m  OK  [0m] Reached target Shutdown.
+[28393.579686] reboot: Power down
+OK  [0m] Unmounted /var/lib/docker/aufs/mnt/...66f5e5829a7a2e4087698dc7cc9596b.
+[[0;32m  OK  [0m] Removed slice system-serial\x2dgetty.slice.
+         Stopping Permit User Sessions...
+[[0;32m  OK  [0m] Stopped /etc/rc.local Compatibility.
+[[0;32m  OK  [0m] Removed slice system-getty.slice.
+[[0;32m  OK  [0m] Stopped Permit User Sessions.
+[[0;32m  OK  [0m] Stopped target Remote File Systems.
+[[0;32m  OK  [0m] Stopped target Remote File Systems (Pre).
+         Stopping Login to default iSCSI targets...
+[[0;32m  OK  [0m] Stopped target User and Group Name Lookups.
+[[0;32m  OK  [0m] Stopped Login to default iSCSI targets.
+         Stopping iSCSI initiator daemon (iscsid)...
+[[0;32m  OK  [0m] Stopped iSCSI initiator daemon (iscsid).
+[[0;32m  OK  [0m] Stopped target Network is Online.
+[[0;32m  OK  [0m] Unmounted /var/lib/docker/aufs/mnt/...17d1e2e31238c2097296436dfcd6bd3.
+[[0;32m  OK  [0m] Unmounted /var/lib/docker/aufs.
+[[0;32m  OK  [0m] Stopped Docker Application Container Engine.
+[[0;32m  OK  [0m] Stopped target Network.
+[[0;32m  OK  [0m] Stopped target Basic System.
+[[0;32m  OK  [0m] Stopped target Paths.
+[[0;32m  OK  [0m] Stopped Dispatch Password Requests to Console Directory Watch.
+[[0;32m  OK  [0m] Stopped ACPI Events Check.
+[[0;32m  OK  [0m] Stopped Forward Password Requests to Wall Directory Watch.
+[[0;32m  OK  [0m] Stopped target Slices.
+[[0;32m  OK  [0m] Removed slice User and Session Slice.
+[[0;32m  OK  [0m] Stopped target Sockets.
+[[0;32m  OK  [0m] Closed Socket activation for snappy daemon.
+[[0;32m  OK  [0m] Closed Syslog Socket.
+[[0;32m  OK  [0m] Closed LXD - unix socket.
+[[0;32m  OK  [0m] Closed D-Bus System Message Bus Socket.
+[[0;32m  OK  [0m] Closed UUID daemon activation socket.
+[[0;32m  OK  [0m] Closed ACPID Listen Socket.
+[[0;32m  OK  [0m] Closed Docker Socket for the API.
+[[0;32m  OK  [0m] Stopped target System Initialization.
+         Stopping Load/Save Random Seed...
+[[0;32m  OK  [0m] Stopped target Encrypted Volumes.
+[[0;32m  OK  [0m] Stopped Commit a transient machine-id on disk.
+         Stopping LSB: ebtables ruleset management...
+[[0;32m  OK  [0m] Stopped Initial cloud-init job (metadata service crawler).
+         Stopping Raise network interfaces...
+[[0;32m  OK  [0m] Stopped Create Volatile Files and Directories.
+[[0;32m  OK  [0m] Stopped target Swap.
+[[0;32m  OK  [0m] Stopped Load/Save Random Seed.
+[[0;32m  OK  [0m] Stopped LSB: ebtables ruleset management.
+[[0;32m  OK  [0m] Stopped Raise network interfaces.
+[[0;32m  OK  [0m] Stopped target Network (Pre).
+[[0;32m  OK  [0m] Stopped Initial cloud-init job (pre-networking).
+[[0;32m  OK  [0m] Stopped target Local File Systems.
+         Unmounting /var/lib/kubelet/pods/cf...ecret/calico-node-token-ljkph...
+         Unmounting /vagrant...
+         Unmounting /var/lib/kubelet/pods/cf...secret/kube-proxy-token-45vtw...
+         Unmounting /run/docker/netns/default...
+[[0;32m  OK  [0m] Stopped Apply Kernel Variables.
+[[0;32m  OK  [0m] Stopped Load Kernel Modules.
+[[0;32m  OK  [0m] Unmounted /var/lib/kubelet/pods/cfd...~secret/calico-node-token-ljkph.
+[[0;32m  OK  [0m] Unmounted /vagrant.
+[[0;32m  OK  [0m] Unmounted /var/lib/kubelet/pods/cfd...o~secret/kube-proxy-token-45vtw.
+[[0;32m  OK  [0m] Unmounted /run/docker/netns/default.
+[[0;32m  OK  [0m] Reached target Unmount All Filesystems.
+[[0;32m  OK  [0m] Stopped target Local File Systems (Pre).
+[[0;32m  OK  [0m] Stopped Create Static Device Nodes in /dev.
+[[0;32m  OK  [0m] Stopped Remount Root and Kernel File Systems.
+[[0;32m  OK  [0m] Reached target Shutdown.
+[28279.933259] reboot: Power down
