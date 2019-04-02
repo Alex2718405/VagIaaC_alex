@@ -4,3 +4,4 @@
 JenkinsMaster/ubuntu-xenial-16.04-cloudimg-console.log
 k8sCluster/ubuntu-xenial-16.04-cloudimg-console.log
 JenkinsMaster/ubuntu-xenial-16.04-cloudimg-console.log
+*.log
